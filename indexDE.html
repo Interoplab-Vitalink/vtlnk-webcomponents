@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitalink CarePlan (DE)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="node_modules/@smals-belgium-shared/vitalink-webcomponents/VitalinkCarePlanTable/0.0.11/main.js"></script>
+  </head>
+  <body>
+    <a href="index.html" class="back-button">Back to home</a>
+    <main class="page">
+      <h1>Vitalink CarePlan webcomponent (Deutsch)</h1>
+      <form id="careplan-form" class="parameter-form">
+        <label for="auth-token">Auth token</label>
+        <input type="text" id="auth-token" placeholder="Bearer token" required />
+
+        <label for="patient-pseudonym">Patient pseudonym</label>
+        <input type="text" id="patient-pseudonym" placeholder="Pseudo ID" required />
+
+        <label for="security-label">Security label (optional)</label>
+        <input
+          type="text"
+          id="security-label"
+          placeholder="https://www.apps.vitalink-services.be|PUBLIC_HEALTH"
+          value="https://www.apps.vitalink-services.be|PUBLIC_HEALTH"
+        />
+
+        <button type="submit">Load CarePlan table</button>
+      </form>
+
+      <vitalink-care-plan-table id="careplan-table" language="de"></vitalink-care-plan-table>
+    </main>
+
+    <script src="webcomponent-pages.js"></script>
+    <script>
+      setupCarePlanPage({
+        formId: "careplan-form",
+        tableId: "careplan-table",
+      });
+    </script>
+  </body>
+</html>

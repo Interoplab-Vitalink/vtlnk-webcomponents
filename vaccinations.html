@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitalink Vaccination Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="node_modules/@smals-belgium-shared/vitalink-webcomponents/VitalinkVaccinationTable/0.0.10/main.js"></script>
+  </head>
+  <body>
+    <a href="index.html" class="back-button">Back to home</a>
+    <main class="page">
+      <h1>Vitalink Vaccination webcomponent</h1>
+      <form id="vaccination-form" class="parameter-form">
+        <label for="auth-token">Auth token</label>
+        <input type="text" id="auth-token" placeholder="Bearer token" required />
+
+        <label for="patient-pseudonym">Patient pseudonym</label>
+        <input type="text" id="patient-pseudonym" placeholder="Pseudo ID" required />
+
+        <label for="patient-ssin">Patient SSIN</label>
+        <input type="text" id="patient-ssin" placeholder="11-digit SSIN" required />
+
+        <label for="patient-full-name">Patient full name</label>
+        <input type="text" id="patient-full-name" placeholder="Patient Full Name" required />
+
+        <label for="view">View</label>
+        <select id="view">
+          <option value="citizen">citizen</option>
+          <option value="caregiver">caregiver</option>
+        </select>
+
+        <label for="security-label">Security label (optional)</label>
+        <input
+          type="text"
+          id="security-label"
+          placeholder="https://www.apps.vitalink-services.be|PATIENT_HEALTH_RECORD"
+          value="https://www.apps.vitalink-services.be|PATIENT_HEALTH_RECORD"
+        />
+
+        <button type="submit">Load Vaccination table</button>
+      </form>
+
+      <div id="vaccination-container"></div>
+    </main>
+
+    <script src="webcomponent-pages.js"></script>
+    <script>
+      setupVaccinationPage({
+        formId: "vaccination-form",
+        containerId: "vaccination-container",
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitalink Audit Trail</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="node_modules/@smals-belgium-shared/vitalink-webcomponents/VitalinkAuditTrailTable/0.0.7/main.js"></script>
+  </head>
+  <body>
+    <a href="index.html" class="back-button">Back to home</a>
+    <main class="page">
+      <h1>Vitalink AuditTrail webcomponent</h1>
+      <form id="audit-form" class="parameter-form">
+        <label for="auth-token">Auth token</label>
+        <input type="text" id="auth-token" placeholder="Bearer token" required />
+
+        <label for="patient-pseudonym">Patient pseudonym</label>
+        <input type="text" id="patient-pseudonym" placeholder="Pseudo ID" required />
+
+        <label for="patient-ssin">Patient SSIN</label>
+        <input type="text" id="patient-ssin" placeholder="11-digit SSIN" required />
+
+        <label for="security-label">Security label (optional)</label>
+        <input
+          type="text"
+          id="security-label"
+          placeholder="https://www.apps.vitalink-services.be|VITALINK"
+          value="https://www.apps.vitalink-services.be|VITALINK"
+        />
+
+        <button type="submit">Load Audit Trail table</button>
+      </form>
+
+      <div id="audit-container"></div>
+    </main>
+
+    <script src="webcomponent-pages.js"></script>
+    <script>
+      setupAuditPage({
+        formId: "audit-form",
+        containerId: "audit-container",
+      });
+    </script>
+  </body>
+</html>

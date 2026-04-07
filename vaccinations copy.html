@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Vitalink Vaccination Table</title>
+
+    <link rel="stylesheet"
+        href="node_modules/@smals-belgium-shared/vitalink-webcomponents/VitalinkVaccinationTable/0.0.2/styles.css" />
+    <script src="node_modules/@smals-belgium-shared/vitalink-webcomponents/VitalinkVaccinationTable/0.0.2/main.js"></script>
+</head>
+
+<body>
+
+    <!-- === Parameter Form === -->
+    <form id="parameter-form">
+        <label for="auth-token">Auth Token:</label>
+        <input
+            type="text"
+            id="auth-token"
+            name="auth-token"
+            placeholder="Enter auth token"
+            required
+        />
+        <br />
+
+        <label for="patient-identifier">Pseudonym:</label>
+        <input
+            type="text"
+            id="patient-identifier"
+            name="patient-identifier"
+            placeholder="Enter patient identifier"
+            required
+        />
+        <br />
+
+        <button type="submit">Load Vaccination Table</button>
+    </form>
+
+    <hr />
+
+    <!-- === Container where the component will be inserted === -->
+    <div id="vaccination-container"></div>
+
+
+    <script>
+        const form = document.getElementById("parameter-form");
+        const container = document.getElementById("vaccination-container");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const authToken = document.getElementById("auth-token").value;
+            const pseudonym = document.getElementById("patient-identifier").value;
+
+            // Remove old table if present
+            const existing = document.querySelector("vitalink-vaccination-table");
+            if (existing) existing.remove();
+
+            // Create new table
+            const table = document.createElement("vitalink-vaccination-table");
+
+            table.setAttribute("server", "https://apps-acpt.vitalink-services.be/vault/api/r4");
+
+            // Build patient-identifier field
+            table.setAttribute(
+                "patient-identifier",
+                "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin|urn:be:fgov:ehealth:pseudo:v1:" + pseudonym
+            );
+
+            // Auth token
+            table.setAttribute("auth-token", authToken);
+
+            // Static fields (can also be made dynamic)
+            table.setAttribute("patient-ssin", "87051423939");
+            table.setAttribute("patient-full-name", "Gwen Bleyen");
+
+            // Add to page
+            container.appendChild(table);
+        });
+    </script>
+
+</body>
+</html>
