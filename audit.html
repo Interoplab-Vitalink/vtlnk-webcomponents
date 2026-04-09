@@ -32,8 +32,33 @@
         <button type="submit">Load Audit Trail table</button>
       </form>
 
+      <div class="audit-actions">
+        <button type="button" id="audit-log-button" class="secondary-button">
+          View request log
+        </button>
+      </div>
+
       <div id="audit-container"></div>
     </main>
+
+    <div
+      id="audit-log-modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="audit-log-title"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="audit-log-title">Audit request log</h2>
+          <button type="button" class="modal-close" data-modal-close>
+            Close
+          </button>
+        </div>
+        <div id="audit-log-body" class="modal-body"></div>
+      </div>
+    </div>
 
     <script src="webcomponent-pages.js"></script>
     <script>

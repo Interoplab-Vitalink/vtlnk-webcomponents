@@ -24,6 +24,10 @@ body {
   background: linear-gradient(170deg, var(--bg-start), var(--bg-end));
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .page {
   position: relative;
   max-width: 1100px;
@@ -141,6 +145,27 @@ p {
   background: linear-gradient(135deg, var(--primary-hover), #1d66d8);
 }
 
+.audit-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.secondary-button {
+  border: 1px solid #cde0ff;
+  background: #f1f6ff;
+  color: var(--primary);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background: #e4eeff;
+}
+
 .back-button {
   position: fixed;
   top: 16px;
@@ -159,6 +184,226 @@ p {
 .back-button:hover {
   color: #ffffff;
   background: var(--primary);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 20, 40, 0.5);
+  padding: 24px;
+  z-index: 1000;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-content {
+  width: min(900px, 100%);
+  max-height: 85vh;
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: #f6f9ff;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.modal-body {
+  padding: 16px 20px 20px;
+  overflow: auto;
+  display: grid;
+  gap: 16px;
+}
+
+.modal-close {
+  border: 1px solid #cde0ff;
+  background: #ffffff;
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e9f1ff;
+}
+
+.audit-log-group {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  background: #f9fbff;
+  display: grid;
+  gap: 12px;
+}
+
+.audit-log-group-summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.audit-log-group-summary::-webkit-details-marker {
+  display: none;
+}
+
+.audit-log-group-summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--muted-color);
+}
+
+.audit-log-group[open] .audit-log-group-summary::before {
+  content: "▾";
+}
+
+.audit-log-group-body {
+  display: grid;
+  gap: 12px;
+}
+
+.audit-log-entry {
+  border: 1px solid #dde7f7;
+  border-radius: 10px;
+  padding: 12px;
+  background: #ffffff;
+  display: grid;
+  gap: 6px;
+}
+
+.audit-log-entry[open] {
+  border-color: #c7d9f3;
+  box-shadow: 0 10px 24px rgba(17, 49, 93, 0.08);
+}
+
+.audit-log-summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.audit-log-summary::-webkit-details-marker {
+  display: none;
+}
+
+.audit-log-summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--muted-color);
+}
+
+.audit-log-entry[open] .audit-log-summary::before {
+  content: "▾";
+}
+
+.audit-log-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.copy-button {
+  border: 1px solid #cde0ff;
+  background: #ffffff;
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background: #e9f1ff;
+}
+
+.audit-log-entry > :not(summary) {
+  margin-left: 18px;
+}
+
+.audit-log-entry pre {
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f4f7ff;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 12px;
+}
+
+.json-key {
+  color: #1a55b5;
+}
+
+.json-string {
+  color: #0b7f47;
+}
+
+.json-number {
+  color: #a44f0f;
+}
+
+.json-boolean {
+  color: #8a3ffc;
+}
+
+.json-null {
+  color: #7a869a;
+}
+
+.status-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 12px;
+  border: 1px solid #cdd9ee;
+  background: #f1f5fb;
+  color: #32445f;
+}
+
+.status-label--success {
+  border-color: #b7e4c7;
+  background: #e8f7ee;
+  color: #1b6d3a;
+}
+
+.status-label--error {
+  border-color: #f2b8b5;
+  background: #fdeeee;
+  color: #a1251f;
+}
+
+.audit-log-meta {
+  font-size: 12px;
+  color: var(--muted-color);
 }
 
 #audit-container,

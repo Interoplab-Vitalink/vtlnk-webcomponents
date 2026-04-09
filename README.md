@@ -15,4 +15,16 @@ Vitalink webcomponents test page, based on https://www.npmjs.com/package/@smals-
 OR
 
 ```docker buildx build --platform linux/arm64 -t gwenbleyen/vitalink-webcomponents:arm64 --push .```
+# CORS and response bodies
+The request log modal can only show response bodies if the browser is allowed to read them.
+If the API does not include proper CORS headers, the browser blocks script access to the
+body even though DevTools can still display it.
+
+Recommended solutions:
+- Configure the API to include CORS headers for your origin.
+- Use a same-origin proxy during development.
+
+Dev-only workaround (unsafe):
+```open -na "Google Chrome" --args --disable-web-security --user-data-dir="/tmp/chrome-cors"```
+
 # vitalink-webcomponents
