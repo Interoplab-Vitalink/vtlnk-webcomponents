@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@smals-belgium-shared/vitalink-webcomponents": "^0.0.18",
+    "@smals-belgium-shared/vitalink-webcomponents": "^0.0.19",
     "connect": "^3.7.0",
     "serve-static": "^2.2.1"
   }
