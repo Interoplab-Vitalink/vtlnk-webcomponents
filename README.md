@@ -5,12 +5,17 @@ Vitalink webcomponents test page, based on https://www.npmjs.com/package/@smals-
 1. Clone the repository in a desired location:
   ```git clone git@github.com:gwenbleyen87/vitalink_webcomponents.git```.
 2. Execute ```npm install```in terminal/command prompt.
-3. Execute ```node server.js```.
+3. Execute ```npm start``` (or ```node server.js```).
 4. In a webbrowser by choice, navigate to ```http://localhost:3001```to access the testing page.
 
-The landing page checks npm for newer releases of
-`@smals-belgium-shared/vitalink-webcomponents` via `/api/package-version`
-and highlights when an update is available.
+Do not open `index.html` as a file (`file://…`). Serve it over HTTP (GitHub Pages,
+`npm start`, or Docker).
+
+The landing page version check runs **fully in the browser** (no server API required):
+it reads the declared version from `package.json` and compares it with the latest
+release on the public npm registry. That works on GitHub Pages without `npm install`.
+
+Optional local server: `npm start` still provides `/api/package-version` for debugging.
 
 ## Docker container
 1. Building image: 

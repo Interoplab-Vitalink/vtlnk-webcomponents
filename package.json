@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "node server.js",
     "postinstall": "node scripts/patch-vaccination-date-filter.js"
   },
   "dependencies": {
