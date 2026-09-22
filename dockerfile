@@ -7,11 +7,11 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
-
-# Copy application code
+# Copy application code (includes postinstall patch script)
 COPY . .
+
+# Install dependencies and apply vaccination date-filter patch
+RUN npm install
 
 # Expose the port the app runs on
 EXPOSE 3001

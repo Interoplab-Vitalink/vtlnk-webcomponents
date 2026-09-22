@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "postinstall": "node scripts/patch-vaccination-date-filter.js"
+  },
   "dependencies": {
     "@smals-belgium-shared/vitalink-webcomponents": "^0.0.23",
     "connect": "^3.7.0",

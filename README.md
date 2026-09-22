@@ -8,6 +8,10 @@ Vitalink webcomponents test page, based on https://www.npmjs.com/package/@smals-
 3. Execute ```node server.js```.
 4. In a webbrowser by choice, navigate to ```http://localhost:3001```to access the testing page.
 
+The landing page checks npm for newer releases of
+`@smals-belgium-shared/vitalink-webcomponents` via `/api/package-version`
+and highlights when an update is available.
+
 ## Docker container
 1. Building image: 
 ```docker buildx build --platform linux/amd64 -t gwenbleyen/vitalink-webcomponents:amd64 --push .```

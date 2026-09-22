@@ -54,6 +54,85 @@ p {
   box-shadow: var(--shadow);
 }
 
+.version-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f4f8ff;
+  color: var(--text-color);
+  font-size: 0.92rem;
+}
+
+.version-status strong {
+  font-weight: 700;
+}
+
+.version-status span {
+  color: var(--muted-color);
+}
+
+.version-status code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(18, 33, 54, 0.08);
+}
+
+.version-status__link {
+  margin-left: auto;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.version-status__link:hover {
+  text-decoration: underline;
+}
+
+.version-status--loading {
+  color: var(--muted-color);
+}
+
+.version-status--current {
+  border-color: #b7e4c7;
+  background: #e8f7ee;
+}
+
+.version-status--current strong {
+  color: #1b6d3a;
+}
+
+.version-status--update {
+  border-color: #f0c36d;
+  background: #fff6e5;
+}
+
+.version-status--update strong {
+  color: #9a6700;
+}
+
+.version-status--error {
+  border-color: #f2b8b5;
+  background: #fdeeee;
+}
+
+.version-status--error strong {
+  color: #a1251f;
+}
+
+.component-version {
+  font-weight: 600;
+  color: var(--muted-color);
+  font-size: 0.85em;
+}
+
 .landing-grid {
   display: grid;
   gap: 18px;

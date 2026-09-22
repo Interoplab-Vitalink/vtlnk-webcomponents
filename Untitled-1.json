@@ -1,0 +1,3325 @@
+{
+    "resourceType": "Bundle",
+    "id": "046cb67d-cc5b-4435-8dcd-2ed15e9d602f",
+    "meta": {
+        "lastUpdated": "2026-06-05T13:02:28.480+00:00"
+    },
+    "type": "searchset",
+    "total": 14,
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/_search?_count=20&patient.identifier=https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin|urn:be:fgov:ehealth:pseudo:v1:eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0&_security=https://www.apps.vitalink-services.be|PATIENT_HEALTH_RECORD&_sort=-_lastUpdated"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/9fd5db8b-4c68-4c7d-b7ac-bbe215af2255",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "9fd5db8b-4c68-4c7d-b7ac-bbe215af2255",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.589+00:00",
+                    "source": "#GdFQn2ssfr3sEggn",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "cd02fed8-ce76-4d69-b386-533159db7dda",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#d974731b-6ba2-4e70-88b4-fb2bec3e6006"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "d974731b-6ba2-4e70-88b4-fb2bec3e6006",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "testrecorder",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "text": "Recorder Test",
+                                "family": "Recorder",
+                                "given": [
+                                    "Test"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "lotNumber",
+                                "valueString": "LOT123456AF"
+                            },
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "4867487"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "af13146d-4d95-4887-a04c-45dffe3f6e12"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871726005"
+                        }
+                    ]
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#cd02fed8-ce76-4d69-b386-533159db7dda"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "site": {
+                    "extension": [
+                        {
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality",
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "51440002"
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "371309009"
+                        }
+                    ]
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "IM"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 1
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Pre test Read - 08 - Pre no descriptions - Performer"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "409516001"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/3ff07fe5-fcf4-428c-9cd5-5053f40b6864",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "3ff07fe5-fcf4-428c-9cd5-5053f40b6864",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.569+00:00",
+                    "source": "#li2xWp3z2jdD0c22",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "cd02fed8-ce76-4d69-b386-533159db7dda",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#d974731b-6ba2-4e70-88b4-fb2bec3e6006"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "d974731b-6ba2-4e70-88b4-fb2bec3e6006",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "SE"
+                        }
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "testrecorder",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "text": "Recorder Test",
+                                "family": "Recorder",
+                                "given": [
+                                    "Test"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "lotNumber",
+                                "valueString": "LOT123456AF"
+                            },
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "4499844",
+                                            "display": "Prevenar 20 inj. susp. i.m. voorgev. spuit 1 dosis (0.5 ml)"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "af13146d-4d95-4887-a04c-45dffe3f6e12"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1252709000",
+                            "display": "Pneumokokken 20-valent"
+                        }
+                    ],
+                    "text": "Pneumokokken 20-valent"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#cd02fed8-ce76-4d69-b386-533159db7dda"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "site": {
+                    "extension": [
+                        {
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality",
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "51440002",
+                                "display": "Right and left"
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "371309009",
+                            "display": "Structuur van huid van bovenarm "
+                        }
+                    ],
+                    "text": "Structuur van huid van bovenarm "
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "SC",
+                            "display": "Subcutane"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 4
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Pre test Read 04 - Pneunokokken 20-valent - Performer - Dose 4"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "409516001",
+                                "display": "profylaxe na blootstelling"
+                            }
+                        ],
+                        "text": "profylaxe na blootstelling"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/8b3a03d0-8c47-4373-9aac-23083837ca62",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "8b3a03d0-8c47-4373-9aac-23083837ca62",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.566+00:00",
+                    "source": "#Ks0plkyme0UEZvay",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "p1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "use": "official",
+                                "family": "ARTS",
+                                "given": [
+                                    "Interoplab"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "PractitionerRole",
+                        "id": "pr1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.1.2"
+                            }
+                        ],
+                        "practitioner": {
+                            "reference": "#p1"
+                        },
+                        "organization": {
+                            "reference": "#org1"
+                        },
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "394821009"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Organization",
+                        "id": "org1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "0410064612"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "01234567813"
+                            }
+                        ],
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+                                        "code": "orgprevention",
+                                        "display": "Prevention organisation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": "ORG Interoplab"
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "IT"
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#pr1"
+                        }
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "3217783",
+                                            "display": "Hepatyrix 1 ml inj. susp. i.m. voorgev. spuit 1 ml"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "lotNumber",
+                                "valueString": "LOT12UZ87"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.ehealth.fgov.be/vaccination/vaccination-register",
+                        "value": "ddb26a8a-7723-28a9-e214-5fd01888acf5"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871804001",
+                            "display": "Typhoid + hepatitis A"
+                        }
+                    ]
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "IV",
+                            "display": "Intraveneus"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 2
+                },
+                "note": [
+                    {
+                        "text": "Pre test Read - 07 -  Typhoid + hepatitis A - No performer - ORG"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "1137457009",
+                                "display": "Profylaxe voorafgaand aan blootstelliing"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/40c222be-b836-4945-abad-2a81d89a508e",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "40c222be-b836-4945-abad-2a81d89a508e",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.553+00:00",
+                    "source": "#4jDYwvkT5gl9BwIO",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "p1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "10825396005"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "67091824033"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "use": "official",
+                                "family": "Name",
+                                "given": [
+                                    "Test"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "1734094",
+                                            "display": "BOOSTRIX SER PREREMPL 1 X 0,5 ML"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "lotNumber",
+                                "valueString": "ac37b525ac"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#p1"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                        "value": "9542520e-4350-42a1-a03f-fe19ad87c2ee"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871875004"
+                        }
+                    ],
+                    "text": "Difterie + tetanus + kinkhoest"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-01-12T00:00:00+01:00",
+                "recorded": "2026-01-12T14:05:58+01:00",
+                "doseQuantity": {
+                    "value": 1
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#p1"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/2cbc5925-422b-4594-ab17-d62b8aad6f50",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "2cbc5925-422b-4594-ab17-d62b8aad6f50",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.541+00:00",
+                    "source": "#0HbzmVukSBsWjRIJ",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Organization",
+                        "id": "org1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                                "value": "114215-001"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "114215"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/site/VO",
+                                "value": "114215001"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "0824037071"
+                            }
+                        ],
+                        "name": "Interoplab"
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "1552215",
+                                            "display": "INFANRIX IPV IM SER 1 DOSE 0,5ML"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#org1"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                        "value": "8d849e99-9dae-4912-9ba6-f5cf7b1618b0"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871878002"
+                        }
+                    ],
+                    "text": "Difterie + tetanus + kinkhoest + poliomyelitis"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-01-02T00:00:00+01:00",
+                "recorded": "2026-01-02T13:41:47+01:00",
+                "doseQuantity": {
+                    "value": 1
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#org1"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/28b67f9a-2cbe-4330-a6b1-012ca7072023",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "28b67f9a-2cbe-4330-a6b1-012ca7072023",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.532+00:00",
+                    "source": "#eMOawlKL0fZwI6V7",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Organization",
+                        "id": "org1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                                "value": "114215-001"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "114215"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/site/VO",
+                                "value": "114215001"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "0824037071"
+                            }
+                        ],
+                        "name": "Test no performer"
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "1552215",
+                                            "display": "INFANRIX IPV IM SER 1 DOSE 0,5ML"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#org1"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                        "value": "8d849e99-9dae-4912-9ba6-f5cf7b1618b0"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871878002"
+                        }
+                    ],
+                    "text": "Difterie + tetanus + kinkhoest + poliomyelitis"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-01-12T00:00:00+01:00",
+                "recorded": "2026-01-12T13:41:47+01:00",
+                "doseQuantity": {
+                    "value": 1
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/17b007c7-cb03-4f2c-a1c9-ea4a09e344f3",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "17b007c7-cb03-4f2c-a1c9-ea4a09e344f3",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.393+00:00",
+                    "source": "#fVMN8QxDbfqeBlHS",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "cd02fed8-ce76-4d69-b386-533159db7dda",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#d974731b-6ba2-4e70-88b4-fb2bec3e6006"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "d974731b-6ba2-4e70-88b4-fb2bec3e6006",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "SE"
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.1"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "lotNumber",
+                                "valueString": "AHBVD147BC"
+                            },
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "2765469",
+                                            "display": "Ixiaro inj. susp. i.m./s.c. voorgev. spuit 0.5 ml"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            }
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "af13146d-4d95-4887-a04c-45dffe3f6e12"
+                    }
+                ],
+                "status": "entered-in-error",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871724008",
+                            "display": "Japanse encephalitis"
+                        }
+                    ],
+                    "text": "Japanse encephalitis"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#cd02fed8-ce76-4d69-b386-533159db7dda"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "site": {
+                    "extension": [
+                        {
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality",
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "49370004"
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "5742000",
+                            "display": "Structuur van huid van antebrachium"
+                        }
+                    ],
+                    "text": "Structuur van huid van antebrachium"
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "IV",
+                            "display": "Intraveneus"
+                        }
+                    ],
+                    "text": "Intraveneus"
+                },
+                "doseQuantity": {
+                    "value": 2
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            }
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Read - 00 - Entered in error"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "409516001",
+                                "display": "Profylaxe na blootstelling"
+                            }
+                        ],
+                        "text": "Profylaxe na blootstelling"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/0e9ad10b-1fd7-41d4-ae53-4d8c7e0c3c3a",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "0e9ad10b-1fd7-41d4-ae53-4d8c7e0c3c3a",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.385+00:00",
+                    "source": "#ytuTeADbO9Crts4d",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "cd02fed8-ce76-4d69-b386-533159db7dda",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#d974731b-6ba2-4e70-88b4-fb2bec3e6006"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "d974731b-6ba2-4e70-88b4-fb2bec3e6006",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BEL"
+                        }
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "testrecorder",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "text": "Recorder Test",
+                                "family": "Recorder",
+                                "given": [
+                                    "Test"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "lotNumber",
+                                "valueString": "ABC12ET"
+                            },
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "2950996",
+                                            "display": "Nimenrix inj. opl. (pdr. + oplosm.) i.m. flac. + voorgev. spuit 1 dosis + 0.5 ml"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-vaccination-stock-location",
+                        "valueReference": {
+                            "identifier": {
+                                "system": "https://vaccinnet.be/FHIR/ns-stock-location",
+                                "value": "physician-17938367005"
+                            }
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "af13146d-4d95-4887-a04c-45dffe3f6e12"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871873006",
+                            "display": "Meningokok A, C, W en Y"
+                        }
+                    ],
+                    "text": "Meningokok A, C, W en Y"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#cd02fed8-ce76-4d69-b386-533159db7dda"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "site": {
+                    "extension": [
+                        {
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality",
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "352730000",
+                                "display": "Above"
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "102291007",
+                            "display": "structuur van spier van bil"
+                        }
+                    ]
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "ID",
+                            "display": "Intradermale"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 0.5
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Pre test read 02 - Meningokok A, C, W en Y - Stocklocation-performer"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "1137457009",
+                                "display": "Profylaxe voorafgaand aan blootstelling"
+                            }
+                        ],
+                        "text": "Profylaxe voorafgaand aan blootstelling"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/8ee9833d-acbd-44e5-923a-48a912ad5023",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "8ee9833d-acbd-44e5-923a-48a912ad5023",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.367+00:00",
+                    "source": "#QCsw2DYByvDUJPHd",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Organization",
+                        "id": "org1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                                "value": "114215-001"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "114215"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/site/VO",
+                                "value": "114215001"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "0824037071"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "PractitionerRole",
+                        "id": "a9c9cc90-6f60-4e97-b43b-9eb33359d163",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.1.2"
+                            }
+                        ],
+                        "practitioner": {
+                            "reference": "#06967ca5-fce2-4400-9cdd-af902940e7ca"
+                        },
+                        "organization": {
+                            "reference": "#org1"
+                        }
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "06967ca5-fce2-4400-9cdd-af902940e7ca",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "Arts Interoplab"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "1552215",
+                                            "display": "INFANRIX IPV IM SER 1 DOSE 0,5ML"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#a9c9cc90-6f60-4e97-b43b-9eb33359d163"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                        "value": "8d849e99-9dae-4912-9ba6-f5cf7b1618b0"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871878002"
+                        }
+                    ],
+                    "text": "Difterie + tetanus + kinkhoest + poliomyelitis"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-01-01T00:00:00+01:00",
+                "recorded": "2026-01-01T13:41:47+01:00",
+                "doseQuantity": {
+                    "value": 1
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#a9c9cc90-6f60-4e97-b43b-9eb33359d163"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/a9ec6c1a-a177-425c-8ed0-3d306998d882",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "a9ec6c1a-a177-425c-8ed0-3d306998d882",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.355+00:00",
+                    "source": "#9W9Ia4d8RrROoPWe",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.1"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "p1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "use": "official",
+                                "family": "ARTS",
+                                "given": [
+                                    "Interoplab"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "PractitionerRole",
+                        "id": "pr1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.1.2"
+                            }
+                        ],
+                        "practitioner": {
+                            "reference": "#p1"
+                        },
+                        "organization": {
+                            "reference": "#org1"
+                        },
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "394821009"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Organization",
+                        "id": "org1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "0410064612"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "01234567813"
+                            }
+                        ],
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+                                        "code": "orgprevention",
+                                        "display": "Prevention organisation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": "ORG Interoplab"
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#pr1"
+                        }
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "4280798",
+                                            "display": "Shingrix (Abacus Medicine) inj. susp. (pdr. + susp.) i.m. flac. 50 Âµg + 0.5 ml"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "lotNumber",
+                                "valueString": "LOT234OP"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.ehealth.fgov.be/vaccination/vaccination-register",
+                        "value": "ddb26a8a-7723-28a9-e214-5fd01888acf5"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871919004",
+                            "display": "Varicella - Gordelroos"
+                        }
+                    ]
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "ID",
+                            "display": "Intradermale"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 1
+                },
+                "note": [
+                    {
+                        "text": "Pre test Read - 06 - Varicella - Gordelroos - No Performer - ORG - No metaprofile"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "1137457009",
+                                "display": "Profylaxe voorafgaand aan blootstelling"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/cedc5376-f9ac-4f7c-b93e-454234c85d34",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "cedc5376-f9ac-4f7c-b93e-454234c85d34",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.343+00:00",
+                    "source": "#kzLPdcorZiyLfH6X",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "Organization",
+                        "id": "org1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                                "value": "114215-001"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "114215"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/site/VO",
+                                "value": "114215001"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "0824037071"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "loc1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Encounter",
+                        "id": "encounter1",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#loc1"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "1552215",
+                                            "display": "INFANRIX IPV IM SER 1 DOSE 0,5ML"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#org1"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/vaccinnet1",
+                        "value": "8d849e99-9dae-4912-9ba6-f5cf7b1618b0"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871878002"
+                        }
+                    ],
+                    "text": "Difterie + tetanus + kinkhoest + poliomyelitis"
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#encounter1"
+                },
+                "occurrenceDateTime": "2026-01-14T00:00:00+01:00",
+                "recorded": "2026-01-14T13:41:47+01:00",
+                "doseQuantity": {
+                    "value": 1
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#org1"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/13dd4066-7732-459d-99b4-1c0c9731cc1c",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "13dd4066-7732-459d-99b4-1c0c9731cc1c",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.338+00:00",
+                    "source": "#Y7vVzAFe4SrdAfCD",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "cd02fed8-ce76-4d69-b386-533159db7dda",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#d974731b-6ba2-4e70-88b4-fb2bec3e6006"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "d974731b-6ba2-4e70-88b4-fb2bec3e6006",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "FI"
+                        }
+                    },
+                    {
+                        "resourceType": "PractitionerRole",
+                        "id": "a9c9cc90-6f60-4e97-b43b-9eb33359d163",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.1.2"
+                            }
+                        ],
+                        "practitioner": {
+                            "reference": "#06967ca5-fce2-4400-9cdd-af902940e7ca"
+                        },
+                        "organization": {
+                            "reference": "#f1bc31b2-373f-4b3c-8d26-15a87b5e84db"
+                        }
+                    },
+                    {
+                        "resourceType": "Organization",
+                        "id": "f1bc31b2-373f-4b3c-8d26-15a87b5e84db",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe",
+                                "value": "1012777565"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/hco/VO",
+                                "value": "123456"
+                            },
+                            {
+                                "system": "https://www.vlaanderen.be/standards/fhir/Namingsystem/site/VO",
+                                "value": "654321"
+                            }
+                        ],
+                        "name": "Interoplab PRE test"
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "06967ca5-fce2-4400-9cdd-af902940e7ca",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "Arts Interoplab"
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "lotNumber",
+                                "valueString": "LOT987LT"
+                            },
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "4280848",
+                                            "display": "RotaTeq (Abacus Medicine) or. opl. 2 ml"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#a9c9cc90-6f60-4e97-b43b-9eb33359d163"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "af13146d-4d95-4887-a04c-45dffe3f6e12"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871761004",
+                            "display": "Rotavirus"
+                        }
+                    ]
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#cd02fed8-ce76-4d69-b386-533159db7dda"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "site": {
+                    "extension": [
+                        {
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality",
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "264217000",
+                                "display": "Superior"
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "50092008",
+                            "display": "musculus skeleti femoris"
+                        }
+                    ]
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "Oral",
+                            "display": "Mondeling"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 0.5
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#a9c9cc90-6f60-4e97-b43b-9eb33359d163"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Pre test Read - 05 - Rotavirus - Performer - ORG"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "1137457009",
+                                "display": "Profylaxe voorafgaand aan blootstelling"
+                            }
+                        ],
+                        "text": "Profylaxe voorafgaand aan blootstelling"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/b140ded1-67ad-4695-9193-405c48b12399",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "b140ded1-67ad-4695-9193-405c48b12399",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.244+00:00",
+                    "source": "#CyofetQa05mss0Ea",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "e2d3f4b7-8284-4ff8-8b90-48c889586860",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#60ce4f71-7f51-4b6b-90ad-96b7f2d415e7"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "60ce4f71-7f51-4b6b-90ad-96b7f2d415e7",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "DE"
+                        }
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "pr1",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "text": "Recorder PRETest",
+                                "family": "Recorder",
+                                "given": [
+                                    "PRETest"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+                        "extension": [
+                            {
+                                "url": "lotNumber",
+                                "valueString": "DEF125"
+                            },
+                            {
+                                "url": "coded",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                                            "code": "4710224",
+                                            "display": "Arexvy inj. susp. (pdr. + susp.) i.m. flac. 120 Âµg + 0.5 ml"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#pr1",
+                            "display": "PRETest Recorder"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "84627210-0403-45ad-b7bd-2f0610a2905a"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "51311000087100",
+                            "display": "RSV"
+                        }
+                    ]
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#e2d3f4b7-8284-4ff8-8b90-48c889586860"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "SC",
+                            "display": "Subcutane"
+                        }
+                    ]
+                },
+                "doseQuantity": {
+                    "value": 2
+                },
+                "note": [
+                    {
+                        "text": "PREtest read 01 - RSV-No performer"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "409516001",
+                                "display": "Profylaxe na blootstelling"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://apps-acpt.vitalink-services.be/vault/api/r4/Immunization/a3427df3-43e4-42e2-84b7-54317ccea14b",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "a3427df3-43e4-42e2-84b7-54317ccea14b",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-06-05T12:53:15.235+00:00",
+                    "source": "#q9eCeb0lHGTPJGe1",
+                    "profile": [
+                        "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+                    ],
+                    "security": [
+                        {
+                            "system": "https://www.apps.vitalink-services.be",
+                            "code": "PATIENT_HEALTH_RECORD",
+                            "display": "Patient Health Record"
+                        }
+                    ]
+                },
+                "language": "nl-BE",
+                "contained": [
+                    {
+                        "resourceType": "Encounter",
+                        "id": "cd02fed8-ce76-4d69-b386-533159db7dda",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+                            }
+                        ],
+                        "status": "finished",
+                        "class": {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "AMB",
+                            "display": "ambulatory"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                                "_value": {
+                                    "extension": [
+                                        {
+                                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                            "extension": [
+                                                {
+                                                    "url": "marker",
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "location": [
+                            {
+                                "location": {
+                                    "reference": "#d974731b-6ba2-4e70-88b4-fb2bec3e6006"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Location",
+                        "id": "d974731b-6ba2-4e70-88b4-fb2bec3e6006",
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+                            }
+                        ],
+                        "address": {
+                            "country": "BE"
+                        }
+                    },
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "testrecorder",
+                        "meta": {
+                            "profile": [
+                                "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
+                            ]
+                        },
+                        "extension": [
+                            {
+                                "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                                "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.1.2"
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                                "value": "80061602157"
+                            },
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                                "value": "17938367004"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "text": "Recorder Test",
+                                "family": "Recorder",
+                                "given": [
+                                    "Test"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-intended-profile",
+                        "valueCanonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination|1.1.2"
+                    },
+                    {
+                        "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+                        "valueReference": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://vaccinnet.be/FHIR/ns-vaccination-identifier",
+                        "value": "af13146d-4d95-4887-a04c-45dffe3f6e12"
+                    }
+                ],
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "871720004",
+                            "display": "Dengue"
+                        }
+                    ]
+                },
+                "patient": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                        "value": "eyJjcnYiOiJQLTUyMSIsIngiOiJBUEVtcHhEZ2JYNnNxVklSWWNMcjRSeVA4WU1OU1pGbG1wd0R4Q09aOE5Jd0tCOU1NcFcvblVGVjVLalF5Um9pai9QV3ZQdjNZUW42T251ZnNzcHlEV3pXIiwieSI6IkFXTVAwbStmZU92Yk5jVVlMSzZEcTFKdTlHNnlYbUdiR0tmVFlJYW0rSU9PQ0x6SDBxbjRPa2F3WXYvNDBGSXBpMlh5anVhOXVQelhKWmlFc01Cc1ZQMkgiLCJ0cmFuc2l0SW5mbyI6ImV5SmhkV1FpT2lKb2RIUndjem92TDJGd2FTMWhZM0IwTG1Wb1pXRnNkR2d1Wm1kdmRpNWlaUzl3YzJWMVpHOHZkakV2Wkc5dFlXbHVjeTkyYVhSaGJHbHVhMTkyTVNJc0ltVnVZeUk2SWtFeU5UWkhRMDBpTENKbGVIQWlPakUzT0RBMk5qVXdPRFlzSW1saGRDSTZNVGM0TURZMk5EUTROaXdpWVd4bklqb2laR2x5SWl3aWEybGtJam9pWkdRM01XUTNNRFV0TURnek15MDBOVEUxTFRrNE9UQXROakF4TnpGak5tVTNaRGN5SW4wLi54blhqMkUtZnBaenJVNE5ZLjJKWVc1VTFoOEZHWGc3T0g4RVRPdDdiekFmOXpFSVhWYXFXU09FSUFmcFctd3pfYThMZnV3ZFVad2tvVXhueEpQYWEybDlTNzZtM0xHYXRsTnB4TGNhRi1pWmhfWDA5SlJ0RlJiZm1zbjkyNHpxX2Q2YXE2WnNoVVBLQmE4TzBIbDVjckI4RWlCOUM3NVRtdWtaT1NxbDBQRG11X1YtcVJtWGNPN1JMQXVPdnpUdHJpajlheC44a1M1c2hiZFhrdG9GMThhNklaejVBIn0",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization",
+                                    "extension": [
+                                        {
+                                            "url": "marker",
+                                            "valueBoolean": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "encounter": {
+                    "reference": "#cd02fed8-ce76-4d69-b386-533159db7dda"
+                },
+                "occurrenceDateTime": "2026-06-05T13:53:11+00:00",
+                "recorded": "2026-06-05T13:53:11+00:00",
+                "site": {
+                    "extension": [
+                        {
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality",
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "51440002",
+                                "display": "Right and left "
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "371309009",
+                            "display": "Structuur van huid van bovenarm "
+                        }
+                    ]
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                            "code": "IM",
+                            "display": "Intramusculaire"
+                        }
+                    ],
+                    "text": "Intramusculaire"
+                },
+                "doseQuantity": {
+                    "value": 1
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#testrecorder",
+                            "display": "Test Recorder"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Pre test Read 03 - Dengue - Performer"
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "409516001",
+                                "display": "Profylaxe na blootstelling"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

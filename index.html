@@ -11,11 +11,24 @@
       <section class="landing-hero">
         <h1>Vitalink Webcomponents Test Pages</h1>
         <p>Choose a component page to test behavior and language variants.</p>
+
+        <div
+          id="package-version-status"
+          class="version-status version-status--loading"
+          aria-live="polite"
+        >
+          Checking npm for package updates…
+        </div>
       </section>
 
       <section class="landing-grid">
         <article class="nav-card">
-          <h2>CarePlan Table (0.0.11)</h2>
+          <h2>
+            CarePlan Table
+            <span class="component-version" data-component="VitalinkCarePlanTable"
+              >…</span
+            >
+          </h2>
           <p>Launch the CarePlan table in your preferred language.</p>
           <div class="nav-links">
             <a class="nav-link" href="indexNL.html">Nederlands</a>
@@ -26,7 +39,14 @@
         </article>
 
         <article class="nav-card">
-          <h2>AuditTrail Table (0.0.11)</h2>
+          <h2>
+            AuditTrail Table
+            <span
+              class="component-version"
+              data-component="VitalinkAuditTrailTable"
+              >…</span
+            >
+          </h2>
           <p>Review patient audit events with sorting and filtering.</p>
           <div class="nav-links">
             <a class="nav-link" href="audit.html">Open AuditTrail</a>
@@ -34,7 +54,14 @@
         </article>
 
         <article class="nav-card">
-          <h2>Vaccination Table (0.0.11)</h2>
+          <h2>
+            Vaccination Table
+            <span
+              class="component-version"
+              data-component="VitalinkVaccinationTable"
+              >…</span
+            >
+          </h2>
           <p>Inspect immunization data in citizen or caregiver view.</p>
           <div class="nav-links">
             <a class="nav-link" href="vaccinations.html">Open Vaccinations</a>
@@ -42,5 +69,74 @@
         </article>
       </section>
     </main>
+
+    <script>
+      (async function checkPackageVersion() {
+        const statusEl = document.getElementById("package-version-status");
+        if (!statusEl) return;
+
+        try {
+          const response = await fetch("/api/package-version", {
+            cache: "no-store",
+          });
+          const data = await response.json();
+
+          Object.entries(data.componentVersions || {}).forEach(
+            ([name, version]) => {
+              document
+                .querySelectorAll(`[data-component="${name}"]`)
+                .forEach((el) => {
+                  el.textContent = version ? `(${version})` : "";
+                });
+            }
+          );
+
+          if (!response.ok || data.error) {
+            statusEl.className = "version-status version-status--error";
+            statusEl.innerHTML = `
+              <strong>Version check failed</strong>
+              <span>Installed: ${data.installedVersion || "unknown"} · ${
+                data.error || "Unexpected response"
+              }</span>
+            `;
+            return;
+          }
+
+          if (data.updateAvailable) {
+            statusEl.className = "version-status version-status--update";
+            statusEl.innerHTML = `
+              <strong>Update available</strong>
+              <span>
+                Installed <code>${data.installedVersion}</code> · Latest
+                <code>${data.latestVersion}</code>
+              </span>
+              <a
+                class="version-status__link"
+                href="${data.npmUrl}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on npm</a
+              >
+            `;
+            return;
+          }
+
+          statusEl.className = "version-status version-status--current";
+          statusEl.innerHTML = `
+            <strong>Up to date</strong>
+            <span>
+              Package <code>${data.packageName}</code> · Installed
+              <code>${data.installedVersion}</code>
+            </span>
+          `;
+        } catch (error) {
+          statusEl.className = "version-status version-status--error";
+          statusEl.innerHTML = `
+            <strong>Version check failed</strong>
+            <span>${error.message}</span>
+          `;
+        }
+      })();
+    </script>
   </body>
 </html>
